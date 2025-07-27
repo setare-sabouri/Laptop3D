@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
-import SnakeGame from './SnakeGame' 
+
 import styles from './GameStyles.module.scss'
+import DigitPuzzleGame from './DigitPuzzleGame'
 
 const HackerScreen = () => {
   const [showGame, setShowGame] = useState(false)
@@ -31,7 +32,7 @@ const HackerScreen = () => {
   }, [])
 
   if (showGame) {
-    return <SnakeGame />
+    return <DigitPuzzleGame/>
   }
 
   return (

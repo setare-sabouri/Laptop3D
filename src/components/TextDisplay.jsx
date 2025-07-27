@@ -11,7 +11,7 @@ const TextDisplay = () => {
             maxWidth={ 2 }
         >
 
-            Hack to Play
+            Hack The Digits
         </Text>
 
     )

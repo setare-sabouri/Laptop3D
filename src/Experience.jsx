@@ -5,10 +5,8 @@ export default function Experience() {
     return <>
         <color args={['#241a1a']} attach="background" />
         <Environment preset='city' />
-
         <ComputerMdl />
-        
-        <ContactShadows position={[0, -1.3, 0]} scale={6} opacity={0.7} color={"#000000"} blur={2} />
+        <ContactShadows position={[0, -0.3, 0]} scale={6} opacity={0.8} color={"#000000"} blur={1.5} />
 
     </>
 }

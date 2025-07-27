@@ -1,15 +1,25 @@
+@use './styles/variables' as *;
+
 html,
 body,
-#root
-{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: ivory;
+#root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: ivory;
 }
 
-.CanvasCls{
-    touch-action: none;
+.CanvasCls {
+  touch-action: none;
+}
+
+.screenPlayer {
+  width: 1024px;
+  height: 670px;
+  border: none;
+  border-radius: 15px;
+  background: #010101;
+  overflow: hidden;
 }

@@ -37,31 +37,34 @@
   margin: 2rem auto;
   box-shadow: 0 0 20px vars.$color-terminal;
   font-size: vars.$size-medium;
+  text-align: center;
 }
 
 .title {
-  font-size: 2.4rem;
-  margin-bottom: 1rem;
-  text-align: center;
-  color: vars.$color-terminal;
+  font-size: vars.$size-title;
 }
+
+.message {
+  padding: 1rem 0;
+  font-size: vars.$size-medium;
+  font-weight: bold;
+}
+
 
 .inputLine {
   display: flex;
   gap: 0.6rem;
-  margin: 1rem 0;
+  padding: 1rem 0;
   justify-content: center;
 }
+
 
 .charBox {
   border: 2px solid vars.$color-terminal;
   padding: 0.8rem 1rem;
   min-width: 2.8rem;
-  text-align: center;
-  font-size: vars.$size-large;
+  font-size: vars.$size-medium;
   font-weight: bold;
-  background-color: #000;
-  color: vars.$color-terminal;
 }
 
 .correct {
@@ -86,14 +89,6 @@
   gap: 0.6rem;
   justify-content: center;
   margin-bottom: 0.5rem;
-}
-
-.message {
-  margin-top: 1rem;
-  font-size: 1.6rem; // 🔥 More visible messages
-  text-align: center;
-  font-weight: bold;
-  color: vars.$color-terminal;
 }
 
 .resetButton {

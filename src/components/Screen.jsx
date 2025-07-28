@@ -1,6 +1,6 @@
 import { Html } from '@react-three/drei'
 import React, { useState, useRef } from 'react'
-import './../style.css'
+import '../style.scss'
 import * as THREE from 'three'
 import { useFrame, useThree } from '@react-three/fiber'
 import HackerScreen from './Game/HackerScreen'
@@ -30,13 +30,12 @@ const Screen = () => {
   return (
     <Html
       transform
-      wrapperClass='screen'
       distanceFactor={1.17}
       position={[0, 1.56, -1.4]}
       rotation-x={-0.256}
     >
       <div
-        className='screenPlayer'
+        className="screenPlayer"
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
       >

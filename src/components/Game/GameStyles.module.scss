@@ -1,61 +1,49 @@
+@use '../../styles/variables.scss' as vars ;
+
+
+
+// .game {
+//   background: #111;
+//   color: white;
+//   font-family: 'Segoe UI', sans-serif;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   height: 100%;
+//   width: 100%;
+//   border-radius: 8px;
+// }
+
+// @keyframes blink {
+//   to {
+//     visibility: hidden;
+//   }
+// }
+
+
+
+//// Game.jsx 
+
+
 .terminal {
-  background-color: #000;
-  color: #00ff00;
-  font-family: 'Courier New', monospace;
-  font-size: 13px;
-  padding: 1rem;
-  width: 100%;
-  height: 100%;
+  width: 88%;
+  height: 88%;
   overflow-y: auto;
-  line-height: 1.4;
-  border-radius: 8px;
-
-  .blink {
-    animation: blink 1s steps(2, start) infinite;
-  }
-}
-
-.game {
-  background: #111;
-  color: white;
-  font-family: 'Segoe UI', sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-  border-radius: 8px;
-}
-
-@keyframes blink {
-  to {
-    visibility: hidden;
-  }
-}
-
-
-
-//// snakeGame.jsx 
-
-
-.terminal {
-  background-color: #000;
-  color: #0f0;
-  font-family: 'Courier New', Courier, monospace;
-  padding: 2rem;
-  border-radius: 12px;
-  max-width: 700px;
+  color: vars.$color-terminal;
+  font-family: vars.$family-terminal;
+  border-radius: vars.$border-radius;
+  padding: 2rem 2rem 0 2rem;
   margin: 2rem auto;
-  box-shadow: 0 0 20px #0f0;
-  font-size: 1.4rem; // 🔥 Bumped font size globally
+  box-shadow: 0 0 20px vars.$color-terminal;
+  font-size: vars.$size-medium;
 }
 
 .title {
   font-size: 2.4rem;
   margin-bottom: 1rem;
   text-align: center;
-  color: #0f0;
+  color: vars.$color-terminal;
 }
 
 .inputLine {
@@ -66,14 +54,14 @@
 }
 
 .charBox {
-  border: 2px solid #0f0;
+  border: 2px solid vars.$color-terminal;
   padding: 0.8rem 1rem;
   min-width: 2.8rem;
   text-align: center;
-  font-size: 1.8rem; // 🔥 Big letters!
+  font-size: vars.$size-large;
   font-weight: bold;
   background-color: #000;
-  color: #0f0;
+  color: vars.$color-terminal;
 }
 
 .correct {
@@ -105,7 +93,7 @@
   font-size: 1.6rem; // 🔥 More visible messages
   text-align: center;
   font-weight: bold;
-  color: #0f0;
+  color: vars.$color-terminal;
 }
 
 .resetButton {
@@ -114,7 +102,7 @@
   font-size: 1.4rem;
   font-weight: bold;
   color: #000;
-  background-color: #0f0;
+  background-color: vars.$color-terminal;
   border: none;
   border-radius: 6px;
   cursor: pointer;

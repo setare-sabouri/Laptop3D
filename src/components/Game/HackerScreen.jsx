@@ -24,9 +24,9 @@ const HackerScreen = () => {
       i++
       if (i >= lines.length) {
         clearInterval(interval)
-        setTimeout(() => setShowGame(true), 1500)
+        setTimeout(() => setShowGame(true), 1000)
       }
-    }, 1000)
+    }, 500)
 
     return () => clearInterval(interval)
   }, [])
@@ -40,7 +40,7 @@ const HackerScreen = () => {
       {log.map((line, idx) => (
         <div key={idx}>{line}</div>
       ))}
-      <span className="blink">█</span>
+      <span >█</span>
     </div>
   )
 }

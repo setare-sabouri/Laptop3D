@@ -1,5 +1,4 @@
-@use './styles/variables' as *;
-
+@import './styles/variables' ;
 html,
 body,
 #root {
@@ -19,7 +18,7 @@ body,
   width: 1024px;
   height: 670px;
   border: none;
-  border-radius: 15px;
+  border-radius:$border-radius;
   background: #010101;
   overflow: hidden;
 }

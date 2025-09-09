@@ -6,6 +6,7 @@ import { Perf } from 'r3f-perf';
 import RotateOverlay from './components/RotateOverlay/RotateOverlay';
 import useBreakpoint from './components/Hooks/useBreakpoint.js';
 import useOrientation from './components/Hooks/useOrientation.js';
+import BackAudio from './components/BackAudio/BackAudio.jsx';
 
 function App() {
   const breakpoint = useBreakpoint();
@@ -14,12 +15,13 @@ function App() {
 
   return (
     <>
-       <RotateOverlay show={rotateIsNeeded} />
+      <RotateOverlay show={rotateIsNeeded} />
+      <BackAudio/>
       <Canvas
         className="CanvasCls"
         camera={{ fov: 45, near: 0.1, far: 2000, position: [-3, 1.5, 4] }}
       >
-        <Perf />
+        {/* <Perf /> */}
         <Experience />
       </Canvas>
     </>

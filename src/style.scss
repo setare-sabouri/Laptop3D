@@ -11,6 +11,7 @@ body,
 }
 
 .CanvasCls {
+  z-index: -1;
   touch-action: none;
 }
 
@@ -19,6 +20,6 @@ body,
   height: 670px;
   border: none;
   border-radius:$border-radius;
-  background: #010101;
+  background: #2b2525;
   overflow: hidden;
 }
